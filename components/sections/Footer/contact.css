@@ -1,0 +1,87 @@
+.contact-container {
+  padding: 120px 0;
+}
+.footer-contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.component-left {
+  width: 25%;
+}
+.component-right {
+  width: 35%;
+}
+.title-contact {
+  margin-bottom: 2.5rem;
+}
+.image-contact {
+  display: inline;
+  float: left;
+  width: 3.5rem;
+}
+.contact-items {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 1.5rem;
+}
+.contact-header__information {
+  margin-left: 2.5rem;
+}
+.contact-header__information a {
+  color: black;
+  font-size: 1.7em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  display: block;
+  width: 45%;
+}
+
+.form-item,
+textarea.form-input {
+  margin-bottom: 30px;
+}
+
+.form-item:nth-child(even) {
+  margin-left: 30px;
+}
+
+.form-input {
+  font-size: 0.87em;
+  font-weight: 400;
+  min-width: 100%;
+  min-height: 3rem;
+  padding: 1rem;
+  border: 1px solid #ededed; /* white grey */
+}
+
+textarea.form-input {
+  min-width: 95%;
+}
+
+.form-input::-webkit-outer-spin-button,
+.form-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.button-send-message {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 12.5rem;
+  height: 3.5rem;
+  border-radius: 0.25em;
+  border: none;
+  background: #0db3c7; /* bright dark blue */
+  color: white;
+  cursor: pointer;
+}

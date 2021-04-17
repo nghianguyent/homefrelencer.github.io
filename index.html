@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:700|Montserrat:300,400,500,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Frelencer</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="sticky-wrapper">
+        <nav class="navbar" id="navbar">
+          <div class="container-header">
+            <a class="nav-logo" href="http://john.wethemez.com/">
+              <img src="./assets/images/nav-logo.png" alt />
+            </a>
+            <div class="menu-container" id="menuContainer">
+              <ul class="menu m-auto" id="navContainer">
+                <!-- Render list items using JS -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="headerContainer" class="section-header" ref="{headerRef}">
+        <iframe
+          src="./components/sections/header/header.html"
+          type="text/html"
+          style="width: 100vw; height: 950px; margin: -1px"
+        ></iframe>
+      </section>
+      <section id="servicesContainer" class="section-services">
+        <iframe
+          src="./components/sections/services/services.html"
+          scrolling="no"
+          type="text/html"
+        ></iframe>
+      </section>
+      <section id="portfolioSection" class="section-portfolio">
+        <iframe
+          src="./components/sections/Portfolio/portfolio.html"
+          scrolling="no"
+          type="text/html"
+        ></iframe>
+      </section>
+      <section id="skillContainer" class="section-skill">
+        <iframe
+          src="./components/sections/Skill/skill.html"
+          scrolling="no"
+          type="text/html"
+        ></iframe>
+      </section>
+      <section id="feedbackContainer" class="section-feedback">
+        <iframe
+          src="./components/sections/Feedback/feedback.html"
+          scrolling="no"
+          type="text/html"
+        ></iframe>
+      </section>
+      <section id="partnerContainer" class="section-partners">
+        <iframe
+          src="./components/sections/partner/partner.html"
+          scrolling="no"
+          type="text/html"
+        ></iframe>
+      </section>
+      <section id="blogsContainer" class="section-blog">
+        <iframe
+          src="./components/sections/Blog/blog.html"
+          scrolling="no"
+          type="text/html"
+        ></iframe>
+      </section>
+      <section id="contactContainer" class="section-contact">
+        <iframe
+          src="./components/sections/Footer/contact.html"
+          type="text/html"
+          scrolling="no"
+          frameborder="0"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="footer-author" id="footerContainer">
+      <ul class="media-icons" id="mediaIcons">
+        <!-- this is rendered by js -->
+      </ul>
+      <div class="author-content">
+        <h4>Made with love by Blazethemez</h4>
+        <h4 class="copy-right">© 2020 BLAZETHEMEZ - ALL RIGHTS RESERVED</h4>
+      </div>
+    </footer>
+    <script src="./utils/dummy.js"></script>
+    <script src="./utils/utils.js"></script>
+    <script
+    type="text/javascript"
+    src="components/sections/Footer/media.js"
+  ></script>
+  </body>
+</html>

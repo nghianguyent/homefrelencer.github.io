@@ -1,0 +1,72 @@
+.background-image__circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: #0db3c7; /* cyan */
+  opacity: 0.03;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(200px, 150px);
+}
+.partner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.partner-description {
+  width: 30%;
+}
+.partner-description__introduction {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.partner-description__clients-items {
+  margin-top: 20px;
+  display: flex;
+  width: 50%;
+  text-transform: none;
+  color: black;
+  letter-spacing: 0;
+  font-size: 1em;
+  font-weight: 600;
+}
+.partner-description__clients-items div {
+  width: 50%;
+}
+.partner-number {
+  width: 100%;
+  font-size: 3.75em;
+  color: #83d6e0; /* cyan */
+}
+.partner-description__images {
+  width: 30%;
+}
+.partner-items {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.partner-items .list-items {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 0 30px 60px 0 rgb(0 11 40 / 10%); /* black linear */
+  /* translate the position */
+  transform: rotate(var(--angleRotate)) translate(var(--radius))
+    rotate(calc(-1 * var(--angleRotate)));
+}
+
+.partner-items .list-items:nth-child(1) {
+  width: 110px;
+  height: 110px;
+}

@@ -1,0 +1,236 @@
+body {
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: Open Sans, sans-serif;
+  color: #797979; /*gray*/
+  margin: 0;
+}
+.container-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  max-width: 1140px;
+}
+.header-banner {
+  align-items: center;
+  position: relative;
+  height: 950px;
+  display: flex;
+}
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+}
+.bubble.b1 {
+  width: 10px;
+  height: 10px;
+  background: #00c99c; /*green*/
+  top: 25%;
+  left: 85px;
+  animation: spin2 2s infinite alternate;
+}
+.bubble.b2 {
+  width: 30px;
+  height: 30px;
+  background: #fca249; /*orange*/
+  top: 40%;
+  left: 155px;
+  animation: spin1 2s infinite alternate;
+}
+.bubble.b3 {
+  width: 14px;
+  height: 14px;
+  background: #7d95fa; /*blue*/
+  top: 85%;
+  left: 255px;
+  animation: spin1 1s infinite alternate;
+}
+.bubble.b4 {
+  width: 10px;
+  height: 10px;
+  background: #d27dfa; /*purple*/
+  top: 100px;
+  left: 205px;
+  animation: spin1 2s infinite alternate;
+}
+.bubble.b5 {
+  width: 30px;
+  height: 30px;
+  background: #ff9398; /*pink*/
+  top: 250px;
+  left: 355px;
+  animation: spin1 3s infinite alternate;
+}
+.bubble.b6 {
+  width: 14px;
+  height: 14px;
+  background: #f1d53b; /*yellow*/
+  top: 75%;
+  left: 55px;
+  animation: spin2 2s infinite alternate;
+}
+@keyframes spin2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+@keyframes spin1 {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.header-background {
+  position: absolute;
+  top: -1px;
+  height: 100%;
+  width: auto;
+  right: 0px;
+  z-index: -1;
+}
+.row {
+  display: flex;
+  margin-right: -1em;
+  margin-left: -1em;
+}
+.col-lg-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.frelencer-content {
+  margin-right: -55px;
+}
+.frelencer-content h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70px;
+  padding-bottom: 30px;
+  letter-spacing: -1.01px;
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  color: #040c2c; /*dark blue*/
+  line-height: 1.2;
+}
+.frelencer-content h2 span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #0db3c7; /*cyan*/
+}
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.frelencer-content h4 span {
+  background: rgba(13, 179, 199, 0.12); /*blue*/
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 6px;
+  color: #0db3c7; /*cyan*/
+  font-family: Montserrat, sans-serif;
+  line-height: 1.2;
+}
+.hire-me {
+  margin-top: 2.67em;
+  background: #0db3c7; /*cyan*/
+  border-color: #0db3c7; /*cyan*/
+  color: #fff; /*white*/
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 36px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 2px;
+}
+.hire-me:hover {
+  box-shadow: 0px 30px 40px gainsboro;
+  transition: 0.5s;
+}
+.frelencer-img {
+  position: relative;
+}
+.f-img {
+  position: absolute;
+  z-index: -1;
+}
+.f-img.i1 {
+  top: 220px;
+  left: 100px;
+  z-index: 1;
+}
+.f-img.i2 {
+  top: 135px;
+  left: 115px;
+}
+.f-img.i3 {
+  top: 272px;
+  right: 94px;
+}
+.f-img.i4 {
+  top: -17px;
+  right: -35px;
+  z-index: 0;
+}
+.f-img.i5 {
+  left: 177px;
+  top: 38px;
+}
+.f-img.i5 img {
+  animation: fadeInUp3 1.5s 0.2s infinite alternate both;
+}
+.f-img.i6 {
+  top: 0;
+  left: 292px;
+  z-index: 1;
+}
+.f-img.i6 img {
+  animation: fadeInUp3 1.9s 0.3s infinite alternate-reverse both;
+}
+.f-img.i7 {
+  top: 90px;
+  right: 108px;
+  z-index: 0;
+}
+.f-img.i7 img {
+  animation: fadeInUp3 2.1s 0.2s infinite alternate both;
+}
+.f-img.i8 {
+  right: 20px;
+  top: 180px;
+}
+.f-img.i8 img {
+  animation: fadeInUp3 3s 0.5s infinite alternate-reverse both;
+}
+.f-img.i9 {
+  right: -5px;
+  top: 64px;
+}
+.f-img.i9 img {
+  animation: fadeInUp3 3s 0.5s infinite alternate-reverse both;
+}
+@keyframes fadeInUp3 {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

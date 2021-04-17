@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./../../../assets/styles/styles.css" />
+    <title>footer</title>
+  </head>
+
+  <body>
+    <div class="contact-container">
+      <div class="footer-contact">
+        <div class="component-left" id="contactInformation">
+          <div class="title-contact">
+            <h6>GET IN TOUCH</h6>
+            <h2>Talk Or Meet With Me</h2>
+          </div>
+          <!-- this is rendered by js -->
+        </div>
+        <div class="component-right">
+          <div class="title-contact">
+            <h6>CONTACT US</h6>
+            <h2>Let Me Know Here Know Here</h2>
+          </div>
+          <form id="footerFormInput">
+            <ul class="form-container" id="formInputs">
+              <!-- this is rendered by js -->
+            </ul>
+            <textarea
+              class="form-input"
+              id="formInputMessage"
+              cols="30"
+              rows="6"
+              placeholder="Your Message ..."
+            ></textarea>
+            <button
+              class="button-send-message"
+              type="button"
+              value="OK"
+              onclick="respondFormInput()"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- script -->
+      <script src="./../../../utils/dummy.js"></script>
+      <script src="./contact.js"></script>
+    </div>
+  </body>
+</html>
